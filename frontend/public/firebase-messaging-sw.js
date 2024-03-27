@@ -4,13 +4,13 @@ importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging-compa
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCeA6LtoMYM9VcarlyD8l7d9gvAbAC1cxs",
-    authDomain: "car-rental-f0e79.firebaseapp.com",
-    projectId: "car-rental-f0e79",
-    storageBucket: "car-rental-f0e79.appspot.com",
-    messagingSenderId: "898414440900",
-    appId: "1:898414440900:web:14e13460ce53e702fa3491",
-    measurementId: "G-44N37PL491"
+    apiKey: "Your-API-Key",
+    authDomain: "Your-Auth-Domain",
+    projectId: "Your-Project-Id",
+    storageBucket: "Your-Storage-Bucket",
+    messagingSenderId: "Your-Messaging-Sender-Id",
+    appId: "Your-App-Id",
+    measurementId: "Your-Measurement-Id"
 };
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
