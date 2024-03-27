@@ -16,11 +16,11 @@ app.get('/', function (req, res) {
     res.send(' welcome to the world! of coding!');
 })
 
-app.post('/notify', function (req, res) {
-   
-const {message,title,deviceToken}=req.body;
+app.get('/notify', async (req, res)=> {
+    const token = "fpvYkMP6_TT2cws-lUZV4a:APA91bEFN1icjv4EuZ5G0j7CR9TzID09WegCrpnF78Vw_xu2lj6vCmMHHVPvTUuJjWP4s5nrLTkvh_MKdUNTCriQ5xG4fHDzJMa6CtTirt-TV_ZNNS2isfPUeN1f05_UbH4aOAxvbo4F"
+const {message="sdfs",title="sdf",deviceToken =token}=req.query;
 
-    pushNotifications(deviceToken, title, message);
+   await pushNotifications(deviceToken, title, message);
     res.send('Notification sent successfully');
 });
 

@@ -25,6 +25,8 @@ const setupNotifications = async () => {
             console.log('FCM Token:', token);
         } else {
             console.log('Notification permission denied.');
+            localStorage.removeItem('token');
+
         }
         // Handle foreground notifications
         onMessage(messaging, (payload) => {
